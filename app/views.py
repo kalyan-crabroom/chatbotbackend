@@ -79,6 +79,7 @@ def verify():
 
 @webhook_blueprint.route("/webhook", methods=["GET"])
 def webhook_get():
+    print("called me")
     return verify()
 
 @webhook_blueprint.route("/webhook", methods=["POST"])
