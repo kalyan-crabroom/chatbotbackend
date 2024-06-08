@@ -84,12 +84,13 @@ def verify():
 
 @webhook_blueprint.route("/webhook", methods=["GET"])
 def webhook_get():
-    print("called me")
+    print("called me Get")
     return verify()
 
 @webhook_blueprint.route("/webhook", methods=["POST"])
 @signature_required
 def webhook_post():
+    print("called me too")
     return handle_message()
 
 
