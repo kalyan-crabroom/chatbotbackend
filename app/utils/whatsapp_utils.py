@@ -26,6 +26,7 @@ def get_text_message_input(recipient, text):
 
 
 def generate_response(response):
+    print(response)
     # Return text in uppercase
     return response.upper()
 
@@ -94,6 +95,7 @@ def process_whatsapp_message(body):
 
 
 def is_valid_whatsapp_message(body):
+    print(body)
     """
     Check if the incoming webhook event has a valid WhatsApp message structure.
     """
