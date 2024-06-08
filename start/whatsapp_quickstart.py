@@ -40,9 +40,9 @@ def send_whatsapp_message():
 
 
 # Call the function
-# response = send_whatsapp_message()
-# print(response.status_code)
-# print(response.json())
+response = send_whatsapp_message()
+print(response.status_code)
+print(response.json())
 
 # --------------------------------------------------------------
 # Send a custom text WhatsApp message
