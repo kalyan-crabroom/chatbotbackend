@@ -13,6 +13,7 @@ webhook_blueprint = Blueprint("webhook", __name__)
 
 
 def handle_message():
+    
     """
     Handle incoming webhook events from the WhatsApp API.
 
@@ -27,7 +28,8 @@ def handle_message():
         response: A tuple containing a JSON response and an HTTP status code.
     """
     body = request.get_json()
-    # logging.info(f"request body: {body}")
+    logging.info(f"request body: {body}")
+    print(body)
 
     # Check if it's a WhatsApp status update
     if (
