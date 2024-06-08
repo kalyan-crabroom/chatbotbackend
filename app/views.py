@@ -47,8 +47,9 @@ def handle_message():
             return jsonify({"status": "ok"}), 200
         else:
             # if the request is not a WhatsApp API event, return an error
+            print("Not a whatsapp API")
             return (
-                print("Not a whatsapp API")
+                
                 jsonify({"status": "error", "message": "Not a WhatsApp API event"}),
                 404,
             )
